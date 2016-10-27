@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="target/classes" path="src/main/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry including="**/*.java" kind="src" path="src/main/resources"/>
+	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry including="**/*.java" kind="src" output="target/test-classes" path="src/test/resources"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/com.springsource.net.sf.cglib-2.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/com.springsource.org.apache.commons.logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/commons-lang-2.6.jar"/>
+	<classpathentry kind="lib" path="C:/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/hsqldb.jar"/>
+	<classpathentry kind="lib" path="C:/jackcess-2.0.6.jar"/>
+	<classpathentry kind="lib" path="C:/mysql-connector-java-5.1.36-bin.jar"/>
+	<classpathentry kind="lib" path="C:/org.springframework.asm-3.0.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/org.springframework.beans-3.0.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/org.springframework.context-3.0.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/org.springframework.core-3.0.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/org.springframework.expression-3.0.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/ucanaccess-2.0.9.2.jar"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>
