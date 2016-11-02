@@ -9,7 +9,7 @@ import java.sql.SQLException;
 import spring.user.domain.User;
 
 public class UserDao {
-
+ 
 	private Connection getConnection() throws ClassNotFoundException, SQLException {
 		Class.forName("com.mysql.jdbc.Driver");
 		Connection c = DriverManager.getConnection(
