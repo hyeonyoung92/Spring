@@ -9,7 +9,13 @@ import java.sql.SQLException;
 import spring.user.domain.User;
 
 public class UserDao {
- 
+	private ConnectionMaker connectionMaker;
+	
+	public UserDao() {
+		connectionMaker = new DConnectionMaker();
+	}
+	
+	/*
 	private Connection getConnection() throws ClassNotFoundException, SQLException {
 		Class.forName("com.mysql.jdbc.Driver");
 		Connection c = DriverManager.getConnection(
@@ -17,8 +23,9 @@ public class UserDao {
 		return c;
 		
 	}
+	*/
 	public void add(User user) throws ClassNotFoundException, SQLException {
-		Connection con = getConnection();
+		Connection con = connectionMaker.makeConnection();
 
 		PreparedStatement ps = con.prepareStatement("insert into users(id, name, password) values(?,?,?)");
 		ps.setString(1, user.getId());
@@ -32,7 +39,7 @@ public class UserDao {
 	}
 
 	public User get(String id) throws ClassNotFoundException, SQLException {
-		Connection con = getConnection();
+		Connection con = connectionMaker.makeConnection();
 		
 		PreparedStatement ps = con.prepareStatement("select * from users where id = ?");
 		ps.setString(1, id);
